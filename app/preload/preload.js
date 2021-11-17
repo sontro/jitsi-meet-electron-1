@@ -1,9 +1,10 @@
 /* global process */
 
-const createElectronStorage = require('redux-persist-electron-storage');
+const jitsiMeetElectronUtils = require('@jitsi/electron-sdk');
 const { ipcRenderer } = require('electron');
 const os = require('os');
-const jitsiMeetElectronUtils = require('@jitsi/electron-sdk');
+const createElectronStorage = require('redux-persist-electron-storage');
+
 const { openExternalLink } = require('../features/utils/openExternalLink');
 
 

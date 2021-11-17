@@ -1,6 +1,14 @@
 /* global __dirname, process */
 
 const {
+    initPopupsConfigurationMain,
+    getPopupTarget,
+    RemoteControlMain,
+    setupAlwaysOnTopMain,
+    setupPowerMonitorMain,
+    setupScreenSharingMain
+} = require('@jitsi/electron-sdk');
+const {
     BrowserWindow,
     Menu,
     app,
@@ -11,20 +19,14 @@ const debug = require('electron-debug');
 const isDev = require('electron-is-dev');
 const { autoUpdater } = require('electron-updater');
 const windowStateKeeper = require('electron-window-state');
-const {
-    initPopupsConfigurationMain,
-    getPopupTarget,
-    RemoteControlMain,
-    setupAlwaysOnTopMain,
-    setupPowerMonitorMain,
-    setupScreenSharingMain
-} = require('@jitsi/electron-sdk');
+const { existsSync } = require('fs');
 const path = require('path');
 const URL = require('url');
+
 const config = require('./app/features/config');
 const { openExternalLink } = require('./app/features/utils/openExternalLink');
 const pkgJson = require('./package.json');
-const { existsSync } = require('fs');
+
 
 const showDevTools = Boolean(process.env.SHOW_DEV_TOOLS) || (process.argv.indexOf('--show-dev-tools') > -1);
 
