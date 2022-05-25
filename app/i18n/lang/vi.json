@@ -1,0 +1,33 @@
+{
+	"enterConferenceNameOrUrl": "Nhập tên phòng họp hoặc URL của phòng họp",
+	"go": "GO",
+	"help": "Trợ giúp",
+	"termsLink": "Điều khoản",
+	"privacyLink": "Quyền riêng tư",
+	"recentListLabel": "hoặc tham dự các cuộc họp gần đây",
+	"sendFeedbackLink": "Gửi phản hồi",
+	"aboutLink": "Giới thiệu",
+	"sourceLink": "Mã nguồn",
+	"versionLabel": "Phiên bản: {{version}}",
+	"onboarding": {
+		"startTour": "Tham quan",
+		"skip": "Bỏ qua",
+		"welcome": "Chào mừng tới {{appName}}",
+		"letUsShowYouAround": "Hãy để chúng tôi cho bạn thấy xung quanh!",
+		"next": "Tiếp",
+		"conferenceUrl": "Nhập tên (hoặc URL đầy đủ) của phòng bạn muốn tham gia. Bạn có thể đặt tên, chỉ cần cho người khác biết để họ nhập cùng một tên.",
+		"settingsDrawerButton": "Nhấp vào đây để mở cài đặt.",
+		"serverSetting": "Đây sẽ là máy chủ nơi các hội nghị của bạn sẽ diễn ra. Bạn có thể sử dụng của riêng bạn, nhưng bạn không cần thiết!",
+		"serverTimeout": "Hết thời gian để tham gia cuộc họp, nếu cuộc họp chưa được tham gia trước khi hết thời gian chờ, cuộc họp đó sẽ bị hủy.",
+		"alwaysOnTop": "Bạn có thể chuyển đổi xem bạn có muốn bật cửa sổ \"always-on-top\" hay không, được hiển thị khi cửa sổ chính bị mất tiêu điểm. Điều này sẽ được áp dụng cho tất cả các hội nghị."
+	},
+	"settings": {
+		"back": "Quay lại",
+		"alwaysOnTopWindow": "Luôn ở trên cửa sổ",
+		"invalidServer": "URL máy chủ không hợp lệ",
+		"invalidServerTimeout": "Giá trị không hợp lệ cho Thời gian chờ của máy chủ",
+		"serverUrl": "Địa chỉ máy chủ",
+		"serverTimeout": "Thời gian chờ của máy chủ (tính bằng giây)",
+		"disableAGC": "Tắt tự động quyền kiểm soát"
+	}
+}

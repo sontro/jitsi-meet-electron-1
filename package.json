@@ -1,9 +1,9 @@
 {
   "name": "jitsi-meet-electron",
   "version": "2022.4.1",
-  "description": "Electron application for Jitsi Meet",
+  "description": "Suedu Meet",
   "main": "./build/main.js",
-  "productName": "Jitsi Meet",
+  "productName": "Suedu Meet",
   "private": true,
   "scripts": {
     "start": "webpack --config ./webpack.main.js --mode development && concurrently \"npm:watch\" \"electron ./build/main.js\"",
@@ -19,7 +19,7 @@
   },
   "build": {
     "appId": "org.jitsi.jitsi-meet",
-    "productName": "Jitsi Meet",
+    "productName": "Suedu Meet",
     "generateUpdatesFilesForAllChannels": true,
     "afterSign": "./notarize.js",
     "files": [
@@ -47,8 +47,8 @@
       "entitlementsInherit": "entitlements.mac.plist",
       "asarUnpack": "**/*.node",
       "extendInfo": {
-        "NSCameraUsageDescription": "Jitsi Meet requires access to your camera in order to make video-calls.",
-        "NSMicrophoneUsageDescription": "Jitsi Meet requires access to your microphone in order to make calls (audio/video).",
+        "NSCameraUsageDescription": "Suedu Meet requires access to your camera in order to make video-calls.",
+        "NSMicrophoneUsageDescription": "Suedu Meet requires access to your microphone in order to make calls (audio/video).",
         "LSMultipleInstancesProhibited": true
       }
     },
@@ -60,9 +60,9 @@
     "linux": {
       "artifactName": "jitsi-meet-${arch}.${ext}",
       "category": "VideoConference;AudioVideo;Audio;Video;Network",
-      "description": "Jitsi Meet Desktop App",
+      "description": "Suedu Meet Desktop App",
       "desktop": {
-        "Comment[hu]": "Asztali Jitsi Meet-alkalmazás"
+        "Comment[hu]": "Asztali Suedu Meet-alkalmazás"
       },
       "executableName": "jitsi-meet",
       "target": [
@@ -87,7 +87,7 @@
       ]
     },
     "win": {
-      "artifactName": "jitsi-meet.${ext}",
+      "artifactName": "suedu-meet.${ext}",
       "target": [
         {
           "arch": [
@@ -116,7 +116,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jitsi/jitsi-meet-electron"
+    "url": "git://github.com/sontro/jitsi-meet-electron-1"
   },
   "keywords": [
     "jingle",
@@ -125,7 +125,7 @@
     "electron",
     "jitsi-meet"
   ],
-  "author": "Jitsi Team <support@jitsi.org>",
+  "author": "Suedu Team <suedu.vn@gmail.com>",
   "readmeFilename": "README.md",
   "license": "Apache-2.0",
   "dependencies": {
